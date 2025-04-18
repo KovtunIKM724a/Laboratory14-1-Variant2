@@ -27,14 +27,14 @@ int BinarySearch(int* a, const int size, int searchElement)
 		}
 	}
 
-	return NOTEXISTERROR;
+         return NOTEXISTERROR;
 }
 
 
 int main() {
     int number;
-	int a;
-	int index;
+    int a;
+    int index;
 
     cout << "Enter a six-digit number: ";
     cin >> number;
@@ -55,17 +55,16 @@ int main() {
     }
     cout << endl;
 
-	cout << "What number would you like to find?: ";
-	cin >> a;
-
-	index = BinarySearch(divisors, count, a);
+    cout << "What number would you like to find?: ";
+    cin >> a;
+    index = BinarySearch(divisors, count, a);
 	
-	if (index == NOTEXISTERROR)
-	{
-		cout << "An element " << a << " was not found";
-	}
-	else
-	{
-		cout << "An element " << a << " has index " << index;
-	}
+    if (index == NOTEXISTERROR)
+    {
+	cout << "An element " << a << " was not found";
+    }
+    else
+    {
+    cout << "An element " << a << " has index " << index;
+    }
 }
